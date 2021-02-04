@@ -87,15 +87,15 @@ fi
 clear
 
 ### Check for config file and source it if it exists
-if [ -f /etc/install-wp-installer.conf ]; then
+if [ -f /etc/wp-installer.conf ]; then
 	echo 'Found configuration file.'
 	echo 'Importing settings from config file...'
-	. /etc/install-wp-installer.conf
+	. /etc/wp-installer.conf
 else
-	if [ -f ~/install-wp-installer.conf ]; then
+	if [ -f ~/wp-installer.conf ]; then
 		echo 'Found configuration file in user home.'
 		echo 'Importing settings from config file...'
-		. ~/install-wp-installer.conf
+		. ~/wp-installer.conf
 	else
 		echo 'No config file was found!'
 		echo  'Using setting from the main script...'
