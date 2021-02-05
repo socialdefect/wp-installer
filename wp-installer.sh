@@ -45,6 +45,7 @@ fi
 
 ### Check for wp-cli and install when needed
 echo 'Checking if wp-cli is installed on this system...'
+which wp
 if [ $? = 0 ]; then
 		echo "Found `wp --version`"
 		wp --info
